@@ -4,6 +4,8 @@
 sylius_shop_product_show:
     path: /products/{slug}
     methods: [GET]
+    requirements:
+        slug: .+
     defaults:
         _controller: sylius.controller.product::showAction
         _sylius:

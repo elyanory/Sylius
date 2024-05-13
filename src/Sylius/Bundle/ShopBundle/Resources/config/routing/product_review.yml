@@ -18,6 +18,8 @@ sylius_shop_product_review_index:
 sylius_shop_product_review_create:
     path: /new
     methods: [GET, POST]
+    requirements:
+        slug: .+
     defaults:
         _controller: sylius.controller.product_review::createAction
         _sylius:
